@@ -9,31 +9,28 @@ const QuestionCard = ({
   onSubmit,
   attempts,
 }) => {
+  // Check if answerOptions is an array before mapping
+  const optionsList = Array.isArray(answerOptions) ? (
+    answerOptions.map((answer, index) => (
+      <button
+        key={index}
+        onClick={() => onSelectAnswer(index)}
+        className={selectedAnswer === answer ? "selected" : ""}
+      >
+        {answer}
+      </button>
+    ))
+  ) : (
+    <p>No options available</p>
+  );
+
   return (
     <div className="question-card">
       <div className="question-text">{question}</div>
-      {Array.isArray(answerOptions) && ( // Check if answerOptions is an array
-        <div className="answer-options">
-          {answerOptions.map((answer, index) => (
-            <button
-              key={index}
-              onClick={() => onSelectAnswer(answer)}
-              className={selectedAnswer === answer ? "selected" : ""}
-            >
-              {answer}
-            </button>
-          ))}
-        </div>
-      )}
+      <div className="answer-options">{optionsList}</div>
       <button onClick={onSubmit} className="submit-button">
         Submit Answer
       </button>
-      {attempts >= 2 && (
-        <div className="correct-answer">
-          {/* Show correct answer and explanation, you will need to adjust how you show this */}
-          <div>Correct Answer: {selectedAnswer}</div> {/* Adjust this line */}
-        </div>
-      )}
     </div>
   );
 };
