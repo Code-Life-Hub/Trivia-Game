@@ -21,18 +21,36 @@ const Home = () => {
       {startGame ? (
         <App difficulty={difficulty} />
       ) : (
-        <div>
-          <h1>Welcome to the Trivia App!</h1>
+        <div className="homeContainer">
+          <h1 className="homeHeader">Are you ready for Trivia?!</h1>
           <div className="difficultySelect">
-            Select Difficulty:
-            <select onChange={handleSelectDifficulty} value={difficulty}>
+            <br></br>
+            <br></br>
+
+            <select
+              className="selectDropBox"
+              onChange={handleSelectDifficulty}
+              value={difficulty}
+            >
               <option value="">-- Select Difficulty --</option>
-              <option value="Easy">Easy</option>
-              <option value="Medium">Medium</option>
-              <option value="Hard">Hard</option>
+              <option className="easyOption" value="Easy">
+                Easy
+              </option>
+              <option className="mediumOption" value="Medium">
+                Medium
+              </option>
+              <option className="hardOption" value="Hard">
+                Hard
+              </option>
             </select>
-            <button onClick={handleStartGame}>Start Game</button>
           </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <button className="startButton" onClick={handleStartGame}>
+            Start Game
+          </button>
         </div>
       )}
     </div>
