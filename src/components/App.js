@@ -4,7 +4,7 @@ import QuestionCard from "./QuestionCard";
 import SuccessAnimation from "./SuccessAnimation";
 import TryAgain from "./FailureAnimation";
 import "../styles/QuestionCard.css";
-import Header from "./Header";
+
 
 function App({ difficulty }) {
   const [currentQuestion, setCurrentQuestion] = useState(null);

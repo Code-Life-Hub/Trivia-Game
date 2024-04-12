@@ -1,6 +1,7 @@
 @media (min-width: 769px) {
   .NavHeader {
     display: flex;
+    height: 100px;
     flex-direction: column;
     background-color: rgb(244, 221, 18);
   }
@@ -19,5 +20,16 @@
   .NavListItem {
     text-align: left;
     font-size: 30px;
+  }
+
+  svg {
+    max-height: 75vh;
+    margin-bottom: 100px;
+  }
+
+  .returnHome {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
   }
 }
