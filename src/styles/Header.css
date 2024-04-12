@@ -10,11 +10,13 @@
     font-size: 50px;
     color: blue;
     text-align: center;
+    margin-bottom: 0;
   }
 
   .NavList {
     list-style: none;
     align-items: left;
+    margin-bottom: 0px;
   }
 
   .NavListItem {
@@ -23,7 +25,7 @@
   }
 
   svg {
-    max-height: 75vh;
+    max-height: 65vh;
     margin-bottom: 100px;
   }
 

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import App from "./App";
 import "../styles/home.css";
 import Header from "./Header";
-import animationData from "./Thinking.json";
-import Lottie from "lottie-react";
+import "../styles/App.css";
 
 const Home = () => {
   const [startGame, setStartGame] = useState(false);
@@ -58,9 +57,6 @@ const Home = () => {
           </button>
         </div>
       )}
-      <footer>
-        <Lottie animationData={animationData} />
-      </footer>
     </div>
   );
 };

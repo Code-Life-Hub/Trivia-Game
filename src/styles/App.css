@@ -30,9 +30,9 @@
 
 .answer-options {
   display: flex;
-  min-height: 50vh;
+  max-height: 45vh;
   flex-direction: column;
-  justify-content: space-evenly !important;
+  justify-content: space-evenly;
   border: solid rgb(236, 96, 120) 4px;
 }
 
@@ -40,7 +40,7 @@
   border: solid black 2px;
   align-items: center;
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   background-color: #ffcc00;
   padding: 10px 20px;
   border-radius: 10px;
