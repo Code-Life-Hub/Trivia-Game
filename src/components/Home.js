@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import App from "./App";
+import "../styles/home.css";
 
 const Home = () => {
   const [startGame, setStartGame] = useState(false);
@@ -22,7 +23,7 @@ const Home = () => {
       ) : (
         <div>
           <h1>Welcome to the Trivia App!</h1>
-          <div>
+          <div className="difficultySelect">
             Select Difficulty:
             <select onChange={handleSelectDifficulty} value={difficulty}>
               <option value="">-- Select Difficulty --</option>
