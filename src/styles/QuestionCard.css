@@ -12,15 +12,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .question-text {
-    background-color: white;
-    color: black;
-  }
 
   .submitButton {
     font-size: 45px;
-    color: white;
-    background-color: blue;
+    color: black;
+    background-color: #4caf50;
   }
 
   .submitButton:hover {

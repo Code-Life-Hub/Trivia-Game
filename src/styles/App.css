@@ -7,6 +7,12 @@
   font-weight: bold;
 }
 
+.question-text {
+  color: rgb(224, 21, 166) !important;
+  font-weight: bold;
+  font-size: 50px;
+}
+
 .explanationText {
   color: blue;
   font-size: 35px;
@@ -27,7 +33,7 @@
   min-height: 50vh;
   flex-direction: column;
   justify-content: space-evenly !important;
-  border: solid black 4px;
+  border: solid rgb(236, 96, 120) 4px;
 }
 
 .answerButtons > button {
