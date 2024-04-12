@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import App from "./App";
 import "../styles/home.css";
+import Header from "./Header";
 
 const Home = () => {
   const [startGame, setStartGame] = useState(false);
@@ -18,6 +19,8 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
+
       {startGame ? (
         <App difficulty={difficulty} />
       ) : (
