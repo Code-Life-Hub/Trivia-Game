@@ -154,9 +154,15 @@ function App({ difficulty }) {
       <header className="App-header">
         {currentQuestion?.showExplanation ? (
           <>
-            <p className="limitReached">You've reached the attempt limit, let's review and move on.</p>
-            <p className="explanationText">{currentQuestion.explanation}</p>
-            <button className="next-question-button" onClick={nextQuestion}>Next Question</button>
+            <p className="limitReached">
+              You've reached the attempt limit, let's review and move on.
+            </p>
+            <p className="explanationText">
+              Answer: {currentQuestion.explanation}
+            </p>
+            <button className="next-question-button" onClick={nextQuestion}>
+              Next Question
+            </button>
           </>
         ) : (
           <>
