@@ -2,19 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.limitReached {
+  color: black;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.explanationText {
+  color: blue;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.next-question-button {
+  font-size: 45px;
+  background-color: #4caf50;
+}
+
+.next-question-button:hover {
+  transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+}
+
+.answer-options {
+  display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly !important;
+  border: solid black 4px;
+}
+
+.answerButtons > button {
+  border: solid black 2px;
+  align-items: center;
+  color: black;
+  font-size: 35px;
+  background-color: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.answerButtons > button:hover {
+  background-color: rgb(236, 96, 120);
+}
+
+.nextButton {
+  display: flex;
+  justify-content: center;
+}
+
+.nextButton:hover {
+  transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+}
+
+.explanation-card {
+  color: black;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
+  color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +69,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

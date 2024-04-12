@@ -3,6 +3,7 @@ import "../styles/App.css";
 import QuestionCard from "./QuestionCard";
 import SuccessAnimation from "./SuccessAnimation";
 import TryAgain from "./FailureAnimation";
+import "../styles/QuestionCard.css";
 
 function App({ difficulty }) {
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -153,9 +154,9 @@ function App({ difficulty }) {
       <header className="App-header">
         {currentQuestion?.showExplanation ? (
           <>
-            <p>You've reached the attempt limit, let's review and move on.</p>
-            <p>{currentQuestion.explanation}</p>
-            <button onClick={nextQuestion}>Next Question</button>
+            <p className="limitReached">You've reached the attempt limit, let's review and move on.</p>
+            <p className="explanationText">{currentQuestion.explanation}</p>
+            <button className="next-question-button" onClick={nextQuestion}>Next Question</button>
           </>
         ) : (
           <>
