@@ -26,7 +26,7 @@ const Home = () => {
         <App difficulty={difficulty} />
       ) : (
         <div className="homeContainer">
-          <h1 className="homeHeader">Are you ready for Trivia?!</h1>
+          <h1 className="homeHeader">Click 'Start Game' to Begin</h1>
           <div className="difficultySelect">
             <br></br>
             <br></br>

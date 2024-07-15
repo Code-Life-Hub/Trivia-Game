@@ -29,30 +29,35 @@
   .selectDropBox {
     border: solid black 2px;
     font-size: 30px;
-    color: blue;
+    color: black;
     margin-bottom: 15%;
+    border-radius: 10px;
+    border-color: rgb(224, 21, 166);
   }
 
   .easyOption {
-    font-size: 35px;
-    color: rgb(120, 195, 8);
-    font-weight: bold;
+    font-size: 30px;
+    color: rgb(224, 21, 166);
+    text-align: center;
   }
 
   .mediumOption {
-    font-size: 35px;
-    color: orange;
-    font-weight: bold;
+    font-size: 30px;
+    color: rgb(224, 21, 166);
+    text-align: center;
   }
 
   .hardOption {
-    font-size: 35px;
-    color: red;
-    font-weight: bold;
+    font-size: 30px;
+    color: rgb(224, 21, 166);
+    text-align: center;
   }
 
   .startButton {
     font-size: 45px;
-    background-color: #4caf50;
+    border: solid rgb(224, 21, 166) 2px;
+    color:white;
+    background-color:  rgb(224, 21, 166);
+    border-radius: 10px;
   }
 }
