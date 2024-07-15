@@ -1,28 +1,27 @@
 @media (min-width: 769px) {
   .NavHeader {
     display: flex;
-    height: 100px;
+    height: 150px;
     flex-direction: column;
-    background-color: rgb(244, 221, 18);
+    background-color: rgb(224, 21, 166);
+    text-align: center;
+    padding-right: 3.5%;
   }
 
   .AppName {
-    font-size: 50px;
-    color: blue;
-    text-align: center;
-    margin-bottom: 0;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 0px;
+    text-decoration: underline;
   }
 
   .NavList {
     list-style: none;
-    align-items: left;
     margin-bottom: 0px;
   }
 
-  .NavListItem {
-    text-align: left;
-    font-size: 30px;
-  }
+  /* .NavListItem {
+  } */
 
   svg {
     max-height: 65vh;
@@ -30,8 +29,7 @@
   }
 
   .returnHome {
-    font-size: 30px;
-    color: blue;
-    text-align: center;
+    font-size: 25px;
+    color: white;
   }
 }
