@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center !important;
     align-items: center;
+    border: solid rgb(224, 21, 166) 2px;
+    padding-bottom: 5%;
   }
 
   .difficultySelect {
