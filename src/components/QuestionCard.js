@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/QuestionCard.css";
-import "../styles/App.css";
 
 // QuestionCard component that displays the question and answer options
 const QuestionCard = ({
@@ -15,7 +14,6 @@ const QuestionCard = ({
   const optionsList = Array.isArray(answerOptions) ? (
     answerOptions.map((answer, index) => (
       <div className="answerButtons">
-        <link rel="stylesheet" href="App.css" />
         <button
           key={index}
           onClick={() => onSelectAnswer(index)}
