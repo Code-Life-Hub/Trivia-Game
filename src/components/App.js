@@ -17,7 +17,7 @@ function App({ difficulty }) {
   // console.log(difficulty);
 
   const handleSelectAnswer = (index) => {
-    // switching from digits to letters
+
     let answer;
     switch (index) {
       case 0:
@@ -34,6 +34,7 @@ function App({ difficulty }) {
         break;
       default:
         answer = "";
+        
     }
     setSelectedAnswer(answer);
     console.log("Selected answer is now:", answer);
