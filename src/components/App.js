@@ -5,7 +5,6 @@ import SuccessAnimation from "./SuccessAnimation";
 import TryAgain from "./FailureAnimation";
 import "../styles/QuestionCard.css";
 
-
 function App({ difficulty }) {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState("");
@@ -17,7 +16,6 @@ function App({ difficulty }) {
   // console.log(difficulty);
 
   const handleSelectAnswer = (index) => {
-
     let answer;
     switch (index) {
       case 0:
@@ -34,7 +32,6 @@ function App({ difficulty }) {
         break;
       default:
         answer = "";
-        
     }
     setSelectedAnswer(answer);
     console.log("Selected answer is now:", answer);
@@ -153,7 +150,6 @@ function App({ difficulty }) {
 
   return (
     <div className="App">
-
       <header className="App-header">
         {currentQuestion?.showExplanation ? (
           <>
